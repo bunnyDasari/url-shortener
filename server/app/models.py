@@ -63,7 +63,7 @@ def shorten_url():
         if existing:
             return jsonify({
                 'short_code': existing['short_code'],
-                'short_url': f"http://localhost:5001/{existing['short_code']}",
+                'short_url': f"https://url-shortener-9ql5.onrender.com/{existing['short_code']}",
                 'original_url': original_url,
                 'message': 'URL already exists'
             }), 200

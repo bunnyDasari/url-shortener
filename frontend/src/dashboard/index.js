@@ -11,7 +11,7 @@ const DashBoard = () => {
 
   const onClickSubmitBtn = async (e) => {
     e.preventDefault()
-    const { data } = await axios.post("http://127.0.0.1:5001/api/shorten", { url })
+    const { data } = await axios.post("https://url-shortener-9ql5.onrender.com/api/shorten", { url })
     setListUrl(data)
     setShow(!show)
     console.log(data)
