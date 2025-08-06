@@ -3,10 +3,10 @@ import string
 import random
 from datetime import datetime
 import validators
-
+from flask_cors import CORS
 app = Flask(__name__)
 
-
+CORS(app)
 urls_storage = []
 next_id = 1
 
